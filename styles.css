@@ -1,0 +1,99 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #f9f9f9,
+    rgb(126, 173, 255),
+    rgb(241, 170, 115)
+  );
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6f61;
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+form input,
+form select,
+form button {
+  width: calc(100% - 20px); /* Adds padding inside the container */
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures proper box sizing */
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+
+form button {
+  width: 100%;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #ff2814;
+  transform: scale(1.02); /* Slight scale effect for a responsive look */
+}
+
+form button:active {
+  transform: scale(0.98); /* Button feedback effect when clicked */
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form input,
+  form select,
+  form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
